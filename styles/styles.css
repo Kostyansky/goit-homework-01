@@ -1,24 +1,56 @@
-body {
-    font-family: 'montserrat', sans-serif;
+/* @font-face {
+  font-family: Andruha-700;
+  src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-ul {
-    list-style: none;
+@font-face {
+  font-family: Andruha-400;
+  src: url(../fonts/Montserrat-Regular.ttf);
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+}
+
+/* ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+} */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/*
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
-text-decoration: none;
+    text-decoration: none;
 }
-*/
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -32,7 +64,36 @@ text-decoration: none;
     overflow: hidden;
 }
 
-/**======== HEADER =========*/
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.section-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #fd9222;
+}
+
+/** =========== HEADER ============== */
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .header-logo {
     color: #111;
     font-size: 18px;
@@ -50,19 +111,17 @@ text-decoration: none;
 .header-menu-item {}
 
 .header-menu-link {
-    color: #111;
+    color: #111111;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
 }
 
-.header-menu-link:hover {
-    color: #fd9222
-}
-
-.header-menu-link:focus {
-    color: #fd9222
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-menu-link:active {
+    color: #fd9222;
 }
 
 .header-soc {}
@@ -71,41 +130,46 @@ text-decoration: none;
 
 .header-soc-link {}
 
-/**==================*/
+/** =========== HERO ============== */
+
 .hero {
-    background-color: rgba(17, 17, 17, 0.60);
+    padding-bottom: 80px;
+}
+
+.hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    padding: 380px 40px 40px 40px;
+    border-radius: 30px;
 }
 
 .hero-title {
-    color: #FFF;
+    color: #ffffff;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    max-width: 484px;
 }
 
 .hero-buy-btn {
-    background-color: #FD9222;
-    color: #FFF;
     font-family: inherit;
+    background-color: #fd9222;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
 }
 
-.hero-buy-btn:hover {
-    background: #FCF1E0;
-    color: #FD9222;
-}
-
+.hero-buy-btn:hover,
 .hero-buy-btn:focus {
-    background: #FCF1E0;
-    color: #FD9222;
+    background-color: #fcf1e0;
+    color: #fd9222;
 }
 
 .hero-anchor-btn {
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
@@ -113,19 +177,25 @@ text-decoration: none;
 
 .hero-anchor-btn:hover,
 .hero-anchor-btn:focus {
-    color: #fd9222
+    color: #fd9222;
 }
 
 .hero-bottom-btn {
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
 }
 
+/** ============================== */
+
+/** =========== FEATURES ============== */
+
 .features {
-    background-color: #1E1823;
+    background-color: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .features-list {}
@@ -133,40 +203,39 @@ text-decoration: none;
 .features-item {}
 
 .features-subtitle {
-    color: #FFF;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 18px;
 }
 
 .features-item-text {
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
 
-.taste {}
+/** ============================== */
+
+/** =========== TASTE ============== */
+
+.taste {
+    padding-top: 120px;
+}
 
 .taste-title {
-    color: #111;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
-.taste-title span {
-    color: #FD9222;
-}
-
-.list {}
+.taste-list {}
 
 .taste-item {}
 
-.taste-img {}
+.taste-img {
+    margin-bottom: 36px;
+}
 
 .taste-subtitle {
     color: #111;
@@ -176,20 +245,16 @@ text-decoration: none;
     letter-spacing: -0.02em;
 }
 
-.made {}
+/** ============================== */
 
-.made-title {
-    color: #111;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+/** =========== MADE ============== */
+
+.made {
+    padding-top: 120px;
 }
 
-.made-title span {
-    color: #FD9222;
+.made-title {
+    margin-bottom: 50px;
 }
 
 .made-img {}
@@ -199,55 +264,69 @@ text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33;
+    margin-bottom: 28px;
 }
 
 .made-list {}
 
-.made-item {}
+.made-item {
+    margin-bottom: 24px;
+}
 
-.item-text {
+.made-item:last-child {
+    margin-bottom: 0;
+}
+
+.made-item-text {
     color: #111;
     font-size: 14px;
     line-height: 1.29;
+    /* 128.571% */
     letter-spacing: -0.02em;
 }
 
-.products {}
+/** ============================== */
 
-.products-title {
-    color: #111;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+/** =========== PRODUCTS ============== */
+
+.products {
+    padding-top: 120px;
 }
 
-.products-title span {
-    color: #fd9222
+.products-title {
+    margin-bottom: 50px;
 }
 
 .products-list {}
 
-.products-item {}
+.products-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+    border-radius: 15px;
+    padding: 32px 20px;
+    text-align: center;
+}
 
-.products-img {}
+.products-img {
+    margin-bottom: 8px;
+}
 
-.products-subtitle {
+.product-subtitle {
     color: #111;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-bottom: 2px;
 }
 
 .products-item-text {
-    color: rgba(17, 17, 17, 0.70);
+    color: rgba(17, 17, 17, 0.7);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
+    margin-bottom: 18px;
 }
 
 .products-item-price {
@@ -257,20 +336,16 @@ text-decoration: none;
     line-height: normal;
 }
 
-.sellers {}
+/** ============================== */
 
-.sellers-title {
-    color: #FD9222;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+/** =========== SELLERS ============== */
+
+.sellers {
+    padding-top: 120px;
 }
 
-.sellers-title span {
-    color: #111;
+.sellers-title {
+    margin-bottom: 50px;
 }
 
 .sellers-list {}
@@ -286,111 +361,128 @@ text-decoration: none;
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-top: none;
+    background: #fff;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
-.loved {}
+/** ============================== */
+
+/** =========== LOVED ============== */
+
+.loved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .loved-title {
-    color: #FD9222;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
-.loved-title span {
-    color: #111;
+.loved-list {
+    margin-bottom: 50px;
 }
 
-.loved-list {}
-
-.loved-item {}
+.loved-item {
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+    padding: 56px 24px 24px 24px;
+}
 
 .loved-img {}
 
-.lived-subtitle {
+.loved-subtitle {
     color: #111;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-    line-height: 1.33;
+    line-height: 1.34;
+    margin-bottom: 24px;
 }
 
 .loved-item-text {
-    color: rgba(17, 17, 17, 0.70);
+    color: rgba(17, 17, 17, 0.702);
     text-align: center;
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
 
-.loved-button {
+.loved-btn {
     color: #111;
-    font-family: Montserrat;
+    font-family: inherit;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
-    background-color: #FFF;
+    background-color: #ffffff;
+    display: block;
+    margin: 0 auto;
 }
 
-.loved-button:hover {
-    background-color: #FD9222;
-    color: #FFF;
+.loved-btn:hover,
+.loved-btn:focus {
+    background-color: #fd9222;
+    color: #ffffff;
 }
 
-.loved-button:focus {
-    background-color: #FD9222;
-    color: #FFF;
-}
+/** ============================== */
+
+/** =========== FOOTER ============== */
 
 .footer {
-    background-color: #1E1823;
+    background-color: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 86px;
 }
 
-.footer-title {
-    color: #FD9222;
+.footer-text {
+    color: #fff;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
+    max-width: 300px;
 }
 
-.footer-title span {
-    color: #FFF;
+.footer-text span {
+    color: #fd9222;
 }
 
 .footer-subtitle {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
+    margin-bottom: 14px;
 }
-
-.footer-social-list {}
-
-.footer-social-item {}
-
-.footer-social-link {}
-
-.footer-address-list {}
 
 .footer-address {
-    font-style: normal;
+    font-style: inherit;
 }
+
+.footer-address-list {}
 
 .footer-address-item {}
 
 .footer-address-link {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+}
+
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 50px;
+    margin-bottom: 24px;
 }
 
 .footer-navigation {}
@@ -400,7 +492,7 @@ text-decoration: none;
 .footer-menu-item {}
 
 .footer-menu-link {
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -410,3 +502,5 @@ text-decoration: none;
 .footer-menu-link:is(:hover, :focus) {
     color: #fd9222;
 }
+
+/** ============================== */
